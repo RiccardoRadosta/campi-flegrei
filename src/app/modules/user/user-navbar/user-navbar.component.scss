@@ -9,25 +9,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000000; // Cambia il colore a tuo piacimento
+  background-color: #747a00;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); // Ombra leggera
 }
+
 .text{
-  color: goldenrod;
+  color: black;
   font-family: 'Dancing Script', cursive;
   font-size: 45px;
-  font-weight:lighters;
+  font-weight:bolder;
   //padding-bottom: 1%;
 }
-.container{
-  //height: 100%;
+.ps-container{
+  //height: 400px;
+  overflow: hidden;
   width: 100%;
 }
 
 .container-image{
   //height: 250px;
   width: 100%;
-  margin: 0;
+  //margin: 0;
   padding: 0;
 }
 
@@ -53,19 +55,37 @@
   .image-small {
     display: block; /* Mostra l'immagine per schermi piccoli */
   }
+  .text{
+    font-size: 25px;
+  }
+}
+@media (max-width: 300px) {
+  .text{
+    font-size: 20px;
+  }
 }
 
 .navbar-items{
   justify-content: space-between;
   //background-color: #3f51b5; // Cambia il colore a tuo piacimento
+  background-color: #9ea601b8;
+  //background-color: #C4CAD0;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); // Ombra leggera
 }
 
 #custom-mat-button {
-  color: rgb(0, 0, 0);// Colore del testo
-  font-weight: 500; // Spessore del carattere
+  color: black;
+  font-family: 'Lobster';
+  font-size: 25px;
+  font-weight: bold; // Spessore del carattere
   &:hover {
-    background-color: #5c6bc0; // Cambia colore al passaggio del mouse
+    background-color: #747a00de; // Cambia colore al passaggio del mouse
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); // Ombra leggera al passaggio del mouse
+  }
+  @media (max-width: 600px) {
+    font-size: 17px;
+  }
+  @media (max-width: 300px) {
+    font-size: 15px;
   }
 }

@@ -25,7 +25,7 @@ export class ProdottiUserComponent {
 
   mostraProdotto(id : number,  event: Event){
     event.stopPropagation();
-    this.router.navigateByUrl(`/prodotto-view/${id}`);
+    this.router.navigateByUrl(`/prodotto-view-user/${id}`);
     console.log(id)
   }
 

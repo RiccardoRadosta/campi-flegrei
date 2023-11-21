@@ -33,6 +33,7 @@ import { AutorizzazioneComponent } from './shared/autorizzazione/autorizzazione.
 import { UserHomepageComponent } from './modules/user/user-homepage/user-homepage.component';
 import { UserNavbarComponent } from './modules/user/user-navbar/user-navbar.component';
 import { ProdottiUserComponent } from './modules/user/prodotti-user/prodotti-user.component';
+import { ProdottoViewUserComponent } from './modules/user/prodotto-view-user/prodotto-view-user.component';
 
 
 
@@ -61,6 +62,7 @@ import { ProdottiUserComponent } from './modules/user/prodotti-user/prodotti-use
     UserHomepageComponent,
     UserNavbarComponent,
     ProdottiUserComponent,
+    ProdottoViewUserComponent,
 
   ],
   imports: [

@@ -12,6 +12,7 @@ import { LoginComponent } from './modules/admin/login/login.component';
 import { AutorizzazioneComponent } from './shared/autorizzazione/autorizzazione.component';
 import { UserHomepageComponent } from './modules/user/user-homepage/user-homepage.component';
 import { UserNavbarComponent } from './modules/user/user-navbar/user-navbar.component';
+import { ProdottoViewUserComponent } from './modules/user/prodotto-view-user/prodotto-view-user.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,8 @@ const routes: Routes = [
   {path: 'autorizzazione', component: AutorizzazioneComponent},
   {path: 'user-homepage', component: UserHomepageComponent},
   {path: 'user-navbar', component: UserNavbarComponent},
+  {path: 'prodotto-view-user/:id', component: ProdottoViewUserComponent},
+  
   {path: '', redirectTo: 'user-homepage', pathMatch: 'full'},
 ];
 

@@ -30,10 +30,14 @@ body{
 }
 
 .custom-row{
+    padding-top: 25px;
+    padding-bottom: 5px;
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
+    background-color: #d8e1e98a ;
     .custom-column{
         flex-basis: 15%;
         padding: 25px;
