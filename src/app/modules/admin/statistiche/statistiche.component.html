@@ -1,0 +1,55 @@
+<app-admin-navbar></app-admin-navbar>
+<mat-card-content>
+    
+    <div class="container">
+        <mat-card-title class="text-center">Statistiche Accessi</mat-card-title>
+        
+            <div class ="position-content">
+                
+                <div class="col">
+                    <div class="mid-col mid-col-border">
+                        <div class="text-col">Giornalieri</div>
+                        <div class="number-col">{{accessi.giornaliero}}</div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mid-col mid-col-border">
+                        <div class="text-col">Settimanali</div>
+                        <div class="number-col">{{accessi.settimanale}}</div>
+                        <div></div>
+                     </div>
+                </div>
+                <div class="col">
+                    <div class="mid-col">
+                        <div class="text-col">Mensili</div>
+                        <div class="number-col">{{accessi.mensile}}</div>
+                        <div></div>
+                    </div>
+                </div>
+
+          </div>         
+    </div>
+
+    <div class="container">
+        <mat-card-title class="text-center">Statistiche Ordini</mat-card-title>
+        
+            <div class ="position-content" >
+                
+                <div class="col-2-items">
+                    <div class="mid-col mid-col-border">
+                        <div class="text-col">Da evadere</div>
+                        <div class="number-col">-</div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="col-2-items">
+                    <div class="mid-col">
+                        <div class="text-col">Evasi</div>
+                        <div class="number-col">-</div>
+                        <div></div>
+                     </div>
+                </div>
+          </div>         
+    </div>
+</mat-card-content>

@@ -1,0 +1,56 @@
+<!-- Nel tuo template HTML -->
+<div class="centered-form">
+  <div class="form-container">
+    <mat-card>
+      <mat-card-header class="text-center">
+        <mat-card-title class="text-center">{{labelConstant.nuovo_prodotto}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        
+        <!-- Anteprima dell'immagine -->
+        <ng-container *ngIf="imagePreviews.length > 0">
+          <div class="main-image-box">
+            <div *ngFor="let preview of imagePreviews; let i = index">
+              <figure class="image-box">
+                <img [src]="preview.imageUrl" alt="Anteprima Immagine">
+                <button (click)="eliminaImmagine(i)" mat-icon-button class="delete-image" aria-label="Example icon-button with heart icon">
+                  <mat-icon class="delete-icon">delete</mat-icon>
+                </button>
+              </figure>
+            </div>
+          </div>
+        </ng-container>
+        
+        <label for="fileInput" class="seleziona" *ngIf="imagePreviews.length < 5">Carica immagini</label>
+        <label class="limite" *ngIf="imagePreviews.length === 5">Limite di immagini raggiunto</label>
+
+        <input type="file" id="fileInput" (change)="onFileSelected($event)" accept="image/*" style="display: none;" multiple>
+        <!-- Form inserimento dati -->
+        <form  [formGroup]="prodottoFormGroup">
+          <mat-form-field appearance="outline" color="accent"  class="label-rules">
+            <mat-label>{{inputConstant.nome}}</mat-label>
+            <input matInput formControlName="name" required>
+            <mat-error>{{labelConstant.campo_obligatorio}}</mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" color="accent"  class="label-rules">
+            <mat-label>{{inputConstant.costo}}</mat-label>
+            <input matInput formControlName="costo" required>
+            <mat-error>{{labelConstant.campo_obligatorio_costo}}</mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" color="accent"  class="label-rules2">
+            <mat-label>{{inputConstant.descrizione}}</mat-label>
+            <input matInput formControlName="description" required>
+            <mat-error>{{labelConstant.campo_obligatorio}}</mat-error>
+          </mat-form-field>
+          
+          <div class="button-container">
+            <button mat-raised-button id="button-add" [disabled]="prodottoFormGroup.invalid" (click)="addProduct()">{{buttonConstant.aggiungi_prodotto}}</button>
+            <button mat-raised-button id="button-delete" (click)="back()">{{buttonConstant.annulla}}</button>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+.custom-card{
+    cursor: pointer;
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    transition: transform 0.3s ease-in;
+    margin-left: 2%;
+    z-index: 1;
+    transform: scale(1.05); // Ingrandisce la card del 10%
+    &:hover{
+        background-color: goldenrod;
+        transform: scale(1.2); // Ingrandisce la card del 10%
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); // Aggiunge un'ombra leggera durante l'hover
+        //transform: translateY(-10px);
+        z-index: 1;
+    }
+    @media screen and (max-width: 500px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+     
+        width: 200px;
+        height: 200px; 
+    }
+
+}
+
+.img-bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+ .group{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+ }
+  .delete-icon{
+    position: relative;
+    color: red; /* Colore principale dell'icona */
+    border: 2px solid white; /* Spessore e colore del bordo */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra leggera */
+    z-index: 2;
+  }
+  .edit{
+    position: relative;
+    z-index: 2;
+  }
+
+  .dettagli{
+    color: white;
+    -webkit-text-stroke-width: 0.1px; /* Larghezza del contorno */
+    -webkit-text-stroke-color: black;
+    padding-left: 10px; /* Aggiunge spazio attorno al testo */
+    //margin: 5px; /* Aggiunge spazio esterno alla card */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 30px; 
+  }

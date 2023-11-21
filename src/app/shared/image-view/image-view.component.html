@@ -1,0 +1,14 @@
+<div class="image-view-container">
+    <button mat-icon-button (click)="closeDialog()" class="button-close">
+      <mat-icon>close</mat-icon>
+    </button>
+    <button mat-icon-button (click)="moveToPrevious()" class="button-previous">
+      <mat-icon>keyboard_arrow_left</mat-icon>
+    </button>
+  
+    <img [src]="getFileType(previews.previews[currentIndex])" alt="Visualizzazione Immagine" />
+  
+    <button mat-icon-button (click)="moveToNext()" class="button-next">
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+  </div>

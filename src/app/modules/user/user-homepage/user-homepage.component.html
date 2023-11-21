@@ -1,0 +1,10 @@
+<app-user-navbar></app-user-navbar>
+<!-- <section id=""> -->
+    <div class="custom-row">
+        <div *ngFor="let prodotto of listaProdotti; let i = index" class="custom-column"> 
+            <div >
+                <app-prodotti-user [prodotto]="prodotto" [image]="listaImage[i % listaImage.length]" ></app-prodotti-user>
+            </div>
+        </div>
+    </div>
+<!-- </section> -->

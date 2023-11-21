@@ -1,0 +1,22 @@
+<mat-card-content>
+    <div class="container">
+        
+        <form  [formGroup]="loginFormGroup" class="position-content">
+            <mat-card-title class="text-center">{{labelConstant.login}}</mat-card-title>
+            <mat-form-field appearance="outline" color="accent"  class="label-rules">
+                <mat-label>{{inputConstant.username}}</mat-label>
+                <input matInput formControlName="username" required>
+                <mat-error>{{labelConstant.campo_obligatorio}}</mat-error>
+                </mat-form-field>
+    
+                <mat-form-field appearance="outline" color="accent"  class="label-rules">
+                <mat-label>{{inputConstant.password}}</mat-label>
+                <input matInput formControlName="password" required>
+                <mat-error>{{labelConstant.campo_obligatorio}}</mat-error>
+                </mat-form-field>
+                <div class="button-container">
+                <button mat-raised-button id="button-add" [disabled]="loginFormGroup.invalid" (click)="login()">{{buttonConstant.accedi}}</button>
+                </div>
+        </form>
+</div>
+</mat-card-content>
