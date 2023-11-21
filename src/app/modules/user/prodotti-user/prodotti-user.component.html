@@ -2,8 +2,8 @@
         <div class="custom-card" (click)="mostraProdotto(prodotto.id, $event)">
             <div class="img-bg" [style.backgroundImage]="'url(' + getFileType(image?.image) + ')'">
                 <div class="dettagli">
-                    <p>{{prodotto.name}}</p>
-                    <p>{{prodotto.costo}}</p>
+                    <p>{{prodotto.name}}  €{{prodotto.costo}}</p>
+                    <!-- <p>{{prodotto.costo}}</p> -->
                 </div>
             </div>  
         </div>

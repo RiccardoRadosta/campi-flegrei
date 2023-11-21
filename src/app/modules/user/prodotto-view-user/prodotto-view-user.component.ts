@@ -100,6 +100,6 @@ export class ProdottoViewUserComponent {
     });
   }
   back(){
-    this.router.navigateByUrl(`/admin-homepage`);
+    this.router.navigateByUrl(`/user-homepage`);
   }
 }
