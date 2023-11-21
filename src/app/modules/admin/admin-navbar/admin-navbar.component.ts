@@ -21,11 +21,15 @@ export class AdminNavbarComponent {
     this.router.navigateByUrl(`/statistiche`);
   }
   logout(){
-    console.log("poi lo colleghiamo al logout!!!")
-    //this.router.navigateByUrl(`/`);
+    this.router.navigateByUrl(`/login`);
+    sessionStorage.removeItem("autorizzazione");
   }
 
   navigateToProdotti(){  
     this.router.navigateByUrl(`/admin-homepage`);
+  }
+
+  navigateToOrdini(){
+    console.log("Basta cliccare, lo collegheremo quando faremo gli ordini e il carrello")
   }
 }

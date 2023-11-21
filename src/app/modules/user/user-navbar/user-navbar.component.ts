@@ -17,8 +17,8 @@ export class UserNavbarComponent {
 
   ngOnInit(){}
 
-  navigate(){  
-    this.router.navigateByUrl(``);
+  navigateToHomepage(){  
+    this.router.navigateByUrl(`/user-homepage`);
   }
 
   navigate2(){  

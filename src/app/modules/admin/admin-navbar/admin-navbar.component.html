@@ -13,10 +13,10 @@
   <mat-toolbar class="navbar-items">
     <button mat-button (click)="navigateToProdotti()">Prodotti Registrati</button>
     <button mat-button (click)="navigateToStatistiche()">Statistiche</button>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" >
+    <button mat-icon-button (click)="navigateToOrdini()" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" >
       <mat-icon>file_open</mat-icon>
     </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <button mat-icon-button (click)="logout()" class="example-icon" aria-label="Example icon-button with share icon">
       <mat-icon>logout</mat-icon>
     </button>
   </mat-toolbar>
