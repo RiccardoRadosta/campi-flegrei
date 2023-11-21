@@ -5,7 +5,7 @@
     width: 300px;
     transition: transform 0.3s ease-in;
     margin-left: 2%;
-    z-index: 0;
+    z-index: 1;
     transform: scale(1.05); // Ingrandisce la card del 10%
     &:hover{
         transform: scale(1.2); // Ingrandisce la card del 10%
