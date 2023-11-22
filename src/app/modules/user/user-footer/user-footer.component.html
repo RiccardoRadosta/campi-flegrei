@@ -1,5 +1,30 @@
 <div class="ps-container">
-        <p class="footer-text">ddddddddddddddddddddddd</p>
+    <div class="text-container">
+        <div class="text-conteiner-sub">
+            <div>{{caratteristicConstant.nome_azienda}}</div>
+            <div *ngIf="caratteristicConstant.indirizzo_legale.via">
+                {{caratteristicConstant.indirizzo_legale.via +", "+ caratteristicConstant.indirizzo_legale.cap+", "+ caratteristicConstant.indirizzo_legale.citta}}
+            </div>
+            <div *ngIf="caratteristicConstant.indirizzo_fisico.via">
+                {{caratteristicConstant.indirizzo_fisico.via +", "+ caratteristicConstant.indirizzo_fisico.cap+", "+ caratteristicConstant.indirizzo_fisico.citta}}
+            </div>
+            <div *ngIf="caratteristicConstant.recapito_1">{{"Telefono: "+caratteristicConstant.recapito_1}}</div>
+            <div *ngIf="caratteristicConstant.recapito_2">{{"Cellulare: "+caratteristicConstant.recapito_2}}</div>
+            <div *ngIf="caratteristicConstant.recapito_3">{{"Cellulare: "+caratteristicConstant.recapito_3}}</div>
+
+        </div>
+        <div class="text-conteiner-sub">
+            <div>{{"Tutti i diritti del sito sono riservati al creatore e sviluppatore "}}</div>
+            <div>{{"Riccardo Radosta "}}</div>
+            <div *ngIf="caratteristicConstant.recapito_main">{{"Telefono: "+caratteristicConstant.recapito_main}}</div>
+            <div *ngIf="caratteristicConstant.email_main">{{"Cellulare: "+caratteristicConstant.email_main}}</div>
+
+        </div>
+    </div>
+
+    <div class="image-container">
         <img src="../../../../assets/images/maps.png" alt="main-image" class="image-large">
+    </div>
+        
         
 </div>

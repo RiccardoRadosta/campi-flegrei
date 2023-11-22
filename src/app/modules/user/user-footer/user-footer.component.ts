@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CARATTERISTIC_CONSTANT } from 'src/app/constants/caratteristic.constant';
 
 @Component({
   selector: 'app-user-footer',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-footer.component.scss']
 })
 export class UserFooterComponent {
+ caratteristicConstant : any = CARATTERISTIC_CONSTANT;
+  constructor(
 
+ ){}
 }

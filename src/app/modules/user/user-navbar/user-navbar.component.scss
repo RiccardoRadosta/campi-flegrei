@@ -11,6 +11,8 @@
   align-items: center;
   background-color: #747a00f5;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); // Ombra leggera
+  border-top: 5px double #a4a763;
+  border-bottom: 5px double #a4a763;
 }
 
 .text{
@@ -23,7 +25,7 @@
 .ps-container{
   //height: 400px;
   overflow: hidden;
-  width: 100%;
+  width: 100%; 
 }
 
 .container-image{
@@ -70,6 +72,8 @@
   background-color: #9ea601b8;
   //background-color: #d8e1e98a;
   box-shadow: 0px 2px px rgba(0, 0, 0, 0.2); // Ombra leggera
+  border-top: 5px double #a4a763;
+  border-bottom: 5px double #a4a763;
 }
 
 #custom-mat-button {
