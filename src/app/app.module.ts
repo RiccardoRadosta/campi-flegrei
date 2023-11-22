@@ -34,6 +34,7 @@ import { UserHomepageComponent } from './modules/user/user-homepage/user-homepag
 import { UserNavbarComponent } from './modules/user/user-navbar/user-navbar.component';
 import { ProdottiUserComponent } from './modules/user/prodotti-user/prodotti-user.component';
 import { ProdottoViewUserComponent } from './modules/user/prodotto-view-user/prodotto-view-user.component';
+import { UserFooterComponent } from './modules/user/user-footer/user-footer.component';
 
 
 
@@ -63,6 +64,7 @@ import { ProdottoViewUserComponent } from './modules/user/prodotto-view-user/pro
     UserNavbarComponent,
     ProdottiUserComponent,
     ProdottoViewUserComponent,
+    UserFooterComponent,
 
   ],
   imports: [
