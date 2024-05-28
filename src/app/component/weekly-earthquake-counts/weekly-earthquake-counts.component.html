@@ -1,0 +1,10 @@
+<div class="container">
+    <h3>Conteggi Terremoti negli Ultimi 7 Giorni</h3>
+    <ul>
+      <li *ngFor="let date of earthquakeCountsLastWeek | keyvalue">
+        <strong>Date:</strong> {{ date.key }},
+        <strong>Count:</strong> {{ date.value }}
+      </li>
+    </ul>
+  </div>
+  

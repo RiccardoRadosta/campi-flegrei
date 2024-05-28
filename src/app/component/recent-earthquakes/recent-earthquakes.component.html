@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>Terremoti nelle ultime 24h: {{ earthquakeCount }}</h2>
+    <ul>
+      <li *ngFor="let earthquake of earthquakes; let i = index">
+        <strong>ID:</strong> {{ i + 1 }},
+        <strong>Date:</strong> {{ earthquake.printdate }},
+        <strong>Magnitude:</strong> {{ earthquake.magnitudos[0]?.value || 'ND' }},
+        <strong>Tipologia:</strong> {{ earthquake.level }},
+      </li>
+    </ul>
+  </div>
+  
