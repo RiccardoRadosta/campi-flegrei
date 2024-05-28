@@ -31,6 +31,6 @@ public class EarthquakeController {
 
     @GetMapping("/lastweek/counts")
     public Map<String, Integer> getCountsLastWeekEarthquakes() {
-        return earthquakeService.countEarthquakesLastWeek();
+        return earthquakeService.countEarthquakesLastWeek() ;
     }
 }
