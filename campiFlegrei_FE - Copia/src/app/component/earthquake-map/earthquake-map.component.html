@@ -1,0 +1,14 @@
+<div class="map-container">
+  <img src="assets/images/campi_flegrei.png" alt="Mappa dei Campi Flegrei" class="map-image">
+  <div *ngFor="let earthquake of earthquakes">
+    <div *ngIf="calculateLeftPercentage(earthquake.location.longitude) !== null && calculateTopPercentage(earthquake.location.latitude) !== null" 
+         class="marker"
+         [style.left.%]="calculateLeftPercentage(earthquake.location.longitude)"
+         [style.top.%]="calculateTopPercentage(earthquake.location.latitude)">
+      <div class="marker-dot"></div>
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,24 @@
+/* earthquake-map.component.scss */
+.map-container {
+  position: relative;
+  width: 100%; /* Assicura che il contenitore sia della stessa larghezza dell'immagine */
+}
+
+.map-image {
+  width: 100%; /* Assicura che l'immagine occupi tutto lo spazio del contenitore */
+}
+
+.marker {
+  position: absolute;
+}
+
+.marker-dot {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  top: -5px; /* A seconda della dimensione del marker, posiziona il centro correttamente */
+  left: -5px; /* A seconda della dimensione del marker, posiziona il centro correttamente */
+}
+

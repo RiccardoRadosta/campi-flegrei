@@ -1,0 +1,41 @@
+<!-- recent-earthquakes.component.html -->
+<div class="main">
+  <div class="card earthquakes-wrapper">
+    <div class="n-earthquakes">
+      <span class="d-block">{{ earthquakeCount }}</span>
+    </div>
+    <div class="card-title">
+      <span>{{ 'EARTHQUAKES_LAST_24H' | translate }}</span>
+      <span class="sub-title">(ultime 24 ore)</span>
+    </div>
+    <div class="earthquake earthquakes-header">
+      <div class="text">{{ 'ID' | translate }}</div>
+      <div class="text">{{ 'DATE' | translate }}</div>
+      <div class="text">{{ 'MAGNITUDE' | translate }} (&PlusMinus; 0.3)</div>
+      <div class="text">Profondit&agrave; (km)</div>
+      <div class="text">{{ 'TYPOLOGY' | translate }}</div>
+    </div>
+    <div class="card-body no-footer">
+      <div class="scrollbar">
+        <li *ngFor="let earthquake of earthquakes; let i = index" class="earthquake">
+          <div class="text">
+            <strong>{{ 'ID' | translate }}:</strong> {{ i + 1 }},
+            <strong>{{ 'DATE' | translate }}:</strong> {{ earthquake.printdate }},
+            <strong>{{ 'MAGNITUDE' | translate }}:</strong> {{ earthquake.magnitudos[0]?.value || 'ND' }},
+            <strong>Profondit&agrave; :</strong> {{ earthquake.location.depth }},
+            <strong>{{ 'TYPOLOGY' | translate }}:</strong> {{ earthquake.level }},
+          </div>
+        </li>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <app-earthquake-map [earthquakes]="earthquakes"></app-earthquake-map>
+  </div>
+</div>
+
+
+
+
+

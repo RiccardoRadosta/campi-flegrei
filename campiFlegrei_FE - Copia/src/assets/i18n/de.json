@@ -1,0 +1,13 @@
+{
+    "TITLE": "Ihr Titel auf Deutsch",
+    "RECENT_EARTHQUAKES": "Aktuelle Erdbeben",
+    "TODAY_EARTHQUAKE_COUNT": "Erdbeben heute",
+    "LAST_7_DAYS_EARTHQUAKE_COUNT": "Erdbeben in den letzten 7 Tagen",
+    "LAST_30_DAYS_EARTHQUAKE_COUNT": "Erdbeben in den letzten 30 Tagen",
+    "EARTHQUAKES_LAST_24H": "Erdbeben in den letzten 24 Stunden",
+    "ID": "ID",
+    "DATE": "Datum",
+    "MAGNITUDE": "Magnitude",
+    "TYPOLOGY": "Typologie"
+  }
+  

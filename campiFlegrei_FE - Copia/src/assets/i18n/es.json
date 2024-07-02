@@ -1,0 +1,13 @@
+{
+    "TITLE": "Tu título en español",
+    "RECENT_EARTHQUAKES": "Terremotos recientes",
+    "TODAY_EARTHQUAKE_COUNT": "Terremotos hoy",
+    "LAST_7_DAYS_EARTHQUAKE_COUNT": "Terremotos en los últimos 7 días",
+    "LAST_30_DAYS_EARTHQUAKE_COUNT": "Terremotos en los últimos 30 días",
+    "EARTHQUAKES_LAST_24H": "Terremotos en las últimas 24 horas",
+    "ID": "ID",
+    "DATE": "Fecha",
+    "MAGNITUDE": "Magnitud",
+    "TYPOLOGY": "Tipología"
+  }
+  
